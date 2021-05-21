@@ -1,8 +1,12 @@
+/*univesal styles */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* header section */
 .header {
     min-height: 100vh;
     width: 100%;
@@ -10,4 +14,52 @@
     background-position: center;
     background-size: cover;
     background-position: cover;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1; /* to occupy the whole space on the row */
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #121258;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+/* hover effect */
+.nav-links ul li::after {
+    content: "";
+    /* width: 100%; */ 
+    width: 0%; /*to hide the lines */
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/*show lines on hover */
+.nav-links ul li:hover::after {
+    width: 100%;
 }
