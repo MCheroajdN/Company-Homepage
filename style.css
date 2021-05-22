@@ -18,13 +18,19 @@
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 0% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
+/*.logo {
+    padding-top: 6%;
+}*/
+
 nav img {
     width: 150px;
+    /*height: 100px;*/
+    padding-top: 8%;
 }
 
 .nav-links {
@@ -40,7 +46,9 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: #121258;
+    /*color: #121258;*/ 
+    /*color:  #000080;*/
+    color: #051094;
     text-decoration: none;
     font-size: 18px;
     text-transform: uppercase;
@@ -53,7 +61,7 @@ nav img {
     /* width: 100%; */ 
     width: 0%; /*to hide the lines */
     height: 2px;
-    background-color: #f44336;
+    background-color: #f44336 ;
     display: block;
     margin: auto;
     transition: 0.5s;
