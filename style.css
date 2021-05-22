@@ -10,25 +10,25 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: url("images/banner.jpg");
+    background-image: linear-gradient(rgba(194, 194, 197, 0.7),rgba(57, 59, 65, 0.7)),url("images/banner.jpg");
     background-position: center;
     background-size: cover;
     background-position: cover;
-}
+    
+ }
 
-/* navigation links */
 nav {
     display: flex;
     padding: 0% 6%;
     justify-content: space-between;
     align-items: center;
-}
+ }
 
 nav img {
     width: 150px;
     /*height: 100px;*/
     padding-top: 8%;
-}
+ }
 
 .nav-links {
     flex: 1; /* to occupy the whole space on the row */
@@ -77,9 +77,9 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%); /* to center in the div */
     text-align: center;
-    color: #9E0202;
+    /*color: #9E0202;*/
+    color: #990F02;
     line-height: 52px;
-    
 }
 
 .header-text h1 {
@@ -91,13 +91,13 @@ nav img {
     margin: 10px 0 30px;
     font-size: 24px;
     line-height: 25px;
-    
 }
 
 span {
     color: #121258 ;
-    font-weight: 600;
+    font-weight: 700;
 }
+
 /*header button */
 .cta {
     padding : 15px 30px;
@@ -110,10 +110,53 @@ span {
     cursor: pointer;
     letter-spacing: 1px;
     transition: 1s;
-    font-size: 18px;
-}
+    font-size: 20px;
+    position: relative;
+ }
 
 .cta:hover {
     background-color: #0f52ba;
-    color: #9E0202;
+    color: #990F02;
+}
+
+/* hide icon for larger media screen as it is meant for smaller screens */
+nav .far, nav .fas {
+     display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .header-text h1 {
+        font-size : 1.5em;
+        line-height: 25px;
+ }
+
+.nav-links ul li {
+    display: block;
+}
+
+.nav-links {
+    position: absolute;
+    background:grey;
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    /*right: 0; */
+    /*instead of 0 to hide the menus */
+    right: -200px;
+    text-align: right;
+    z-index: 2;
+ }
+
+ .nav-links {
+    padding: 20px;
+ }
+
+ /* to show the close and menu icon on small screen */
+ nav .far, nav .fas {
+     display: block;
+     color:black;
+     margin: 10px;
+     font-size: 22px;
+     cursor: pointer;
+ }
 }
