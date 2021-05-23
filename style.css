@@ -1,4 +1,4 @@
-/*univesal styles */
+/*----- univesal styles ------ */
 
 * {
     margin: 0;
@@ -6,12 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* header section */
+/* ----- header section ----- */
 .header {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(235, 244, 249, 0.6),rgba(2, 9, 15, 0.7)),url("images/banner.jpg");
-    /*20, 25, 29, 0.7*   235, 244, 249, 0.7)   13, 23, 31, 0.7*/
     background-position: center;
     background-size: cover;
     position: relative
@@ -44,8 +43,6 @@ nav img {
 }
 
 .nav-links ul li a {
-    /*color: #121258;*/ 
-    /*color:  #000080;*/
     color: #051094;
     text-decoration: none;
     font-size: 18px;
@@ -53,7 +50,7 @@ nav img {
     font-weight:600;
 }
 
-/* nav hover effect */
+/* ----- nav hover effect ----- */
 .nav-links ul li::after {
     content: "";
     /* width: 100%; */ 
@@ -65,7 +62,7 @@ nav img {
     transition: 0.5s;
 }
 
-/*show lines on hover */
+/* show lines on hover */
 .nav-links ul li:hover::after {
     width: 100%;
 }
@@ -192,7 +189,7 @@ h1 {
     padding: 10px;
 }
 
-.reasons {
+.allrows {
     margin-top: 5%;
     display:flex;
     justify-content: space-between;
@@ -224,3 +221,77 @@ h3 {
             flex-direction: column;
         }
     }
+
+
+    /* ----- services section ----- */
+
+    .ourservices {
+        width: 80%;
+        margin: auto;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .ourservices h1 {
+        color: #000080;
+    }
+
+    /*.service {
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    
+    }*/
+
+    .servicecol {
+        position:relative;
+        flex-basis: 30%;
+        flex-direction: row;
+        margin-bottom: 30px;
+        border-radius:  10px;
+        overflow: hidden;
+        /*width: 20%;*/
+        /*height:480px;*/
+    }
+
+        .servicecol P {
+        text-align: left;
+        color: #000080;
+    }
+
+    .servicecol img {
+        width: 500px;
+        height: 420px;
+    }
+
+    .layer {
+        
+       /* background-color: rgba(226, 0, 0, 0.7); */
+       /*to hide the color layer to show only on hover */
+       background-color: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left:0;
+        transition: 0.3s;
+
+    }
+
+    .layer:hover {
+        background-color: rgba(207, 216, 220, 0.7);
+    }
+
+    .servtitle {
+        width: 100%;
+        font-weight: 600;
+        color:#B22222;
+        font-size: 30px;
+        bottom: 55%;
+        left: 1%;
+        transform: translate X(-50%);
+        position: absolute;
+
+    }
+
+   
