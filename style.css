@@ -239,14 +239,7 @@ h3 {
         color: #000080;
     }
 
-    /*.service {
-    margin-top: 5%;
-    display:flex;
-    justify-content: space-between;
-    
-    }*/
-
-    .servicecol {
+        .servicecol {
         position:relative;
         flex-basis: 30%;
         flex-direction: row;
@@ -382,13 +375,19 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    
 }
 
 .footer h4 {
     margin-bottom: 25px;
     margin-top: 5px;
+    font-size: 14px;
     font-weight: 600;
     color:#02075D;
+}
+
+.footer p {
+    font-size: 12px;
 }
 
 .footicon {
