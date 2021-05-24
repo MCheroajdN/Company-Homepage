@@ -219,7 +219,7 @@ h3 {
     }
 
     /* to align reasons for small screen */
-    @media only screen and (max-width: 700px), (min-width: 360px) {
+    @media only screen and (max-width: 700px), (max-width: 360px) {
         .allrows {
             flex-direction: column;
         }
@@ -336,7 +336,7 @@ h3 {
        color: #f44336 ;
    }
 
-@media only screen and (max-width: 700px), (min-width: 360px) {
+@media only screen and (max-width: 700px), (max-width: 360px) {
     .testimonial-col img{
         margin-left: 1px;
         margin-right:5px;
